@@ -13,6 +13,7 @@ Said that, this template use Unifi Network API so it need a view only local user
 Once you create view only user, on Zabbix create a new host and link ***Unifi Network*** template, those macros need to be configured:
 
 - ***{$UNIFI.IP}***: IP or FQDN of Unifi Network Web Interface.
+- ***{$UNIFI.PORT}***: HTTPS Port of Unifi Network Web Interface (default: 443, change if your Controller VM used another port).
 - ***{$UNIFI.USERNAME}***: Username of View Only user.
 - ***{$UNIFI.PASSWORD}***: Password of View Only user.
 
